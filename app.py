@@ -15,10 +15,10 @@ st.sidebar.markdown(
 )
 st.sidebar.markdown("---")
 st.sidebar.markdown(
-    "**Projects**\n"
-    "- [P04 UK Open Data](https://github.com/Felixvenus1)\n"
-    "- [P05 Steam Trends](https://github.com/Felixvenus1)\n"
-    "- [P06 Football Analytics](https://github.com/Felixvenus1)"
+    "**Source projects**\n"
+    "- [P04 UK Open Data](https://github.com/Felixvenus1/uk-open-data-explorer)\n"
+    "- [P05 Steam Trends](https://github.com/Felixvenus1/steam-gaming-trends)\n"
+    "- [P06 Football Analytics](https://github.com/Felixvenus1/premier-league-analytics)"
 )
 
 st.title("Welcome to the Portfolio Dashboard")

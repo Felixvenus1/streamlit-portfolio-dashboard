@@ -1,9 +1,18 @@
 # streamlit-portfolio-dashboard
 
-> **Live app**: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app.streamlit.app)
-> *(Deploy to [Streamlit Community Cloud](https://streamlit.io/cloud) and replace the URL above)*
+> **Deploy-ready** for [Streamlit Community Cloud](https://streamlit.io/cloud).
+> After deploying, drop the badge URL here:
+> `[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://<your-app>.streamlit.app)`
 
 A multi-page Streamlit dashboard that brings together analytical work from three portfolio projects into a single, navigable application.
+
+## Screenshots
+
+| Football Analytics | Steam Trends |
+|---|---|
+| ![Football](docs/page_football_analytics.png) | ![Steam](docs/page_steam_trends.png) |
+
+Regenerate with `streamlit run app.py` then `python docs/capture_screenshots.py`.
 
 ## Pages
 
@@ -14,11 +23,14 @@ A multi-page Streamlit dashboard that brings together analytical work from three
 | ⚽ Football Analytics | Project 06 | Premier League team stats, shot accuracy, goal differentials |
 | ℹ️ About | — | Data sources, methodology, and portfolio links |
 
-## Page Navigation
+## Wireframe & Navigation
+
+See [docs/wireframe.md](docs/wireframe.md) for the page wireframe (ARTEFACT 10-A) and
+the navigation/data-source diagram (ARTEFACT 10-C):
 
 ```mermaid
 graph LR
-    app["app.py\n(entry point)"] --> p1["1_uk_open_data"]
+    app["app.py (entry point)"] --> p1["1_uk_open_data"]
     app --> p2["2_steam_trends"]
     app --> p3["3_football_analytics"]
     app --> p4["4_about"]
@@ -55,7 +67,9 @@ streamlit-portfolio-dashboard/
 │   ├── steam_games_sample.csv # 2k-row Steam games sample
 │   └── pl_teams_sample.csv    # PL team season stats
 └── docs/
-    └── wireframe.png          # App wireframe (Excalidraw)
+    ├── wireframe.md           # App wireframe + nav diagram (10-A, 10-C)
+    ├── capture_screenshots.py # Headless page screenshot generator
+    └── page_*.png             # Page screenshots
 ```
 
 ## Deployment
