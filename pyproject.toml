@@ -1,0 +1,8 @@
+[project]
+name = "streamlit-portfolio-dashboard"
+version = "0.1.0"
+description = "Multi-page Streamlit dashboard aggregating UK Open Data, Steam Trends, and Premier League analytics"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 88
